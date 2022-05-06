@@ -24,11 +24,12 @@ p{
 </head> 
 <body> 
 
-<ul id="menu">
-      <li> <a href="foundryfilesmanual.html" target = "_self">1. Доступ к файлам фаундри</a> </li>
-      <li> <a href="dockerupdate.html" target = "_self">2. Обновление docker-compose</a> </li>
-      <li><a href="site.html" target="_self"><span>Раритет</span></a></li>
-
+<a>
+$ sudo apt-get remove docker-compose<br>
+$ sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose<br>
+$ sudo chmod +x /usr/local/bin/docker-compose<br>
+$ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose<br>
+</a>
 	 
 
 </body> 
